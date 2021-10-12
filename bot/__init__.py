@@ -43,7 +43,7 @@ class Bot:
                     chat_data["users"][str(from_id)] = {}
 
                 # plugins
-                mp.Process(target=sample.run, args=(self.vk_api, message, save_lock)).start()
+                mp.Process(target=sample.run, args=(message, save_lock)).start()
 
                 self.save_data()
 

@@ -2,7 +2,7 @@ import bot.file_manager as fm
 from bot import senders
 
 
-def run(api, data, save_lock):
+def run(data, save_lock):
     save = fm.Save("sample", save_lock)
     # ваши операции ниже
 
@@ -23,8 +23,8 @@ def run(api, data, save_lock):
     file = "./resources/images/belyash.jpg"
     message = "Message"
     # отправить файл
-    senders.send_file(api, int(data["peer_id"]), file, message)
+    senders.send_file(senders.get_api(), int(data["peer_id"]), file, message)
     # отправить фотографию
-    senders.send_photo(api, int(data["peer_id"]), file, message)
+    senders.send_photo(senders.get_api(), int(data["peer_id"]), file, message)
     # отправить файл
-    senders.send_chat_msg(api, int(data["peer_id"]), message)
+    senders.send_chat_msg(senders.get_api(), int(data["peer_id"]), message)
