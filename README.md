@@ -1,7 +1,7 @@
 
 # IFMSH Bot 3.0
 
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python_3.9.5-1f425f.svg)](https://www.python.org/)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python_3.8-1f425f.svg)](https://www.python.org/)
 
 Данный проект представляет собой шаблон бота для беседы VK на Python 3.8. 
 
