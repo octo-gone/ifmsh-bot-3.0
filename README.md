@@ -85,7 +85,7 @@ senders.send_file(senders.get_api(), int(data["peer_id"]), file, message)
 # отправить фотографию
 senders.send_photo(senders.get_api(), int(data["peer_id"]), file, message)
 # отправить файл
-senders.send_chat_msg(senders.get_api(), int(data["peer_id"]), message)
+senders.send_chat_msg(senders.get_api(), int(data["chat_id"]), message)
 ```
 
 ## Структура сообщения и других типов данных
