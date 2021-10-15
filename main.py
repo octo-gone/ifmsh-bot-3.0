@@ -8,7 +8,7 @@ if __name__ == '__main__':
         try:
             bot = Bot()
             bot.start()
-        except requests.exceptions.ConnectionError as exception:
+        except requests.exceptions.ConnectionError or requests.exceptions.ReadTimeout as exception:
             print(exception)
             time.sleep(100)
             continue
